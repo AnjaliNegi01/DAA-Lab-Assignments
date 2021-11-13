@@ -1,11 +1,6 @@
 #include<iostream>
-#include<fstream>
 using namespace std;
 int main(){
-	ifstream in;
-	in.open("input.txt");
-	ofstream out;
-	out.open("output.txt");
 	int n,k,t;
 	int temp;
 	int arr[100];
