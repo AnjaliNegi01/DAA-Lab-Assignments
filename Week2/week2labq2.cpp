@@ -1,20 +1,16 @@
-#include<iostream>
-#include<fstream>
+#include<iostream>>
 using namespace std;
 int main(){
-    ifstream in;
-    in.open("input.txt");
-    ofstream out;
-    out.open("output.txt");
+
     int n,t;
     int arr[100];
     int flag;
-    in >> t;
+    cin >> t;
     int ifinal,jfinal,kfinal;
     while(t){
-        in >> n;
+        cin >> n;
         for(int i=0;i<n;i++){
-            in >> arr[i];
+            cin >> arr[i];
         }
         for(int i=0;i<n-1;i++){
             for(int j=i+1;j<n-i-1;j++){
@@ -33,10 +29,11 @@ int main(){
     t--;
     if(flag==1){
 
-            out << ifinal << "," << jfinal << "," << kfinal << endl;
+            cout << ifinal << "," << jfinal << "," << kfinal << endl;
         }
     else{
-    out << "No Sequence Found"<<endl;
+    cout << "No Sequence Found"<<endl;
     }
     }
 }
+
