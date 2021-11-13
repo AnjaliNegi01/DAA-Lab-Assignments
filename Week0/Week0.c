@@ -6,16 +6,16 @@ scanf("%d",&c);
 int j;
 for(j=0;j<c;j++){
 int n;
-printf("Enter number of elements: ");
+printf("\nEnter number of elements: ");
 scanf("%d",&n);
 int arr[n];
 int i;
-printf("Enter elements: ");
+printf("Enter elements:\n ");
 for(i=0;i<n;i++){
     scanf("%d",&arr[i]);
 }
 int k,t=0,f=0;
-printf("Enter key element");
+printf("Enter key element:");
 scanf("%d",&k);
 for(i=0;i<n;i++){
     f++;
